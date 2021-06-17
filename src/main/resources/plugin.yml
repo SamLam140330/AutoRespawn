@@ -1,0 +1,7 @@
+name: AutoRespawn
+version: ${project.version}
+main: mc.samlam140330.autorespawn.AutoRespawn
+api-version: 1.16
+prefix: AutoRespawn
+authors: [ SamLam140330 ]
+description: Auto respawn without clicking the respawn button when you die
