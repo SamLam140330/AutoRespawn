@@ -3,5 +3,16 @@ version: ${project.version}
 main: mc.samlam140330.autorespawn.AutoRespawn
 api-version: 1.13
 prefix: AutoRespawn
-authors: [ SamLam140330 ]
+author: SamLam140330
 description: Auto respawn without clicking the respawn button when you die
+website: www.spigotmc.org/resources/auto-respawn.93408/
+load: POSTWORLD
+permissions:
+  autorespawn.autorespawn:
+    default: true
+    description: Allow you to respawn automatically
+  autorespawn.*:
+    default: op
+    description: All permissions in this plugin
+    childeren:
+      autorespawn.autorespawn: true

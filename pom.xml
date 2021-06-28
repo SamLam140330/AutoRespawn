@@ -6,7 +6,7 @@
 
     <groupId>mc.samlam140330</groupId>
     <artifactId>autorespawn</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>AutoRespawn</name>
     <description>Auto respawn without clicking the respawn button when you die</description>
