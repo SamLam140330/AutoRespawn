@@ -6,7 +6,7 @@
 
     <groupId>mc.samlam140330</groupId>
     <artifactId>autorespawn</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>AutoRespawn</name>
     <description>Auto respawn without clicking the respawn button when you die</description>
@@ -66,7 +66,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.13.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
