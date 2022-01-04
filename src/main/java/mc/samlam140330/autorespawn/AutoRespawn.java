@@ -1,6 +1,7 @@
 package mc.samlam140330.autorespawn;
 
 import mc.samlam140330.autorespawn.events.AutoRespawnEvent;
+import mc.samlam140330.autorespawn.utils.UpdateChecker;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AutoRespawn extends JavaPlugin {
@@ -13,12 +14,19 @@ public final class AutoRespawn extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+        new UpdateChecker().checkLatestVersion(version -> {
+            if (getDescription().getVersion().equalsIgnoreCase(version)) {
+                getLogger().info("You are running the latest version.");
+            } else {
+                getLogger().info("There is a new update available.");
+            }
+        });
         getServer().getPluginManager().registerEvents(new AutoRespawnEvent(), this);
-        getServer().getConsoleSender().sendMessage("[AutoRespawn] Successfully enabled!");
+        getLogger().info("Successfully enabled!");
     }
 
     @Override
     public void onDisable() {
-        getServer().getConsoleSender().sendMessage("[AutoRespawn] Successfully disabled!");
+        getLogger().info("Successfully disabled!");
     }
 }
